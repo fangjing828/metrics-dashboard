@@ -30,9 +30,9 @@ public class DashBoardProvider extends ContentProvider {
 			"<link rel=\"stylesheet\" href=\"style/bootstrap.min.css\">" +
 			"<link rel=\"stylesheet\" type=\"text/css\" href=\"style/jquery.jqplot.css\">" +
 			"<meta http-equiv=\"refresh\" content=\"%s\">" +
-			"</head><body><div ><h1>Metrics</h1>";
+			"</head><body><div><h1 style=\"padding: 16px;\">Metrics @ <span id=\"date\"></h1>";
 	
-	private static final String FOOTER = "<div id=\"footer\">generated at <span id=\"date\"></span></div>" +
+	private static final String FOOTER = "<div id=\"footer\">" +
 			"</div><script type=\"text/javascript\">" +
 			"$(document).ready(function() {pageloaded();});" +
 			"</script>" +

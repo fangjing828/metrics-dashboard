@@ -10,3 +10,12 @@ int port = ...;
 // Max history of metrics values to keep 
 int maxItems = ...;
 MetricsDashboard dashboard = new MetricsDashboard(port, maxItems);
+
+Example:
+
+MetricsDashboard metricsDashboard = new MetricsDashboard(8085, 20);
+metricsDashboard.run();
+
+In Action Screenshot:
+
+./docs/metrics-dashboard-in-action.png

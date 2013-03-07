@@ -40,7 +40,7 @@ public class HtmlReporter extends AbstractReporter implements MetricProcessor<Pr
     	
     	stream.append("<div class=\"span8 chart\"");
     	stream.printf(" id=\"chart-%s\"", name.hashCode());
-    	stream.append(" style=\"height:250px;width:500px;\"");
+    	stream.append(" style=\"height:420px;width:620px;\"");
     	stream.printf(" data=\"%s\"", graphData.data());
     	stream.append(" name=\"gauge\" labels=\"['value']\"");
     	stream.append("></div>");
@@ -57,7 +57,7 @@ public class HtmlReporter extends AbstractReporter implements MetricProcessor<Pr
     	
     	stream.append("<div class=\"span8 chart\"");
     	stream.printf(" id=\"chart-%s\"", name.hashCode());
-    	stream.append(" style=\"height:250px;width:500px;\"");
+    	stream.append(" style=\"height:420px;width:620px;\"");
     	stream.printf(" data=\"%s\"", graphData.data());
     	stream.append(" name=\"count\" labels=\"['count']\"");
     	stream.append("></div>");
@@ -87,7 +87,7 @@ public class HtmlReporter extends AbstractReporter implements MetricProcessor<Pr
     	
     	stream.append("<div class=\"span8 chart\"");
     	stream.printf(" id=\"chart-%s-meter\"", name.hashCode());
-    	stream.append(" style=\"height:250px;width:500px;\"");
+    	stream.append(" style=\"height:420px;width:620px;\"");
     	stream.printf(" data=\"%s\"", graphData.data());
     	stream.append(" name=\"rate\" labels=\"['mean', '1-minute', '5-minute', '15-minute']\"" );
     	stream.append("></div>");
@@ -121,7 +121,7 @@ public class HtmlReporter extends AbstractReporter implements MetricProcessor<Pr
     	
     	stream.append("<div class=\"span8 chart\"");
     	stream.printf(" id=\"chart-%s\"", name.hashCode());
-    	stream.append(" style=\"height:250px;width:500px;\"");
+    	stream.append(" style=\"height:420px;width:620px;\"");
     	stream.printf(" data=\"%s\"", graphData.data());
     	stream.append(" name=\"histogram\" labels=\"['median', 'max', 'min']\"" );
     	stream.append("></div>");
@@ -148,7 +148,7 @@ public class HtmlReporter extends AbstractReporter implements MetricProcessor<Pr
     	
     	stream.append("<div class=\"span8 chart\"");
     	stream.printf(" id=\"chart-%s\"", name.hashCode());
-    	stream.append(" style=\"height:250px;width:500px;\"");
+    	stream.append(" style=\"height:420px;width:620px;\"");
     	stream.printf(" data=\"%s\"", graphData.data());
     	stream.append(" name=\"time\" labels=\"['median', 'max', 'min']\"" );
     	stream.append("></div>");
